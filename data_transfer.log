@@ -1,0 +1,811 @@
+2025-05-08 13:03:24,328 - INFO - Source DB: mysql, Destination DB: oracle, Operation: create
+2025-05-08 13:03:25,503 - INFO - Connected to source and destination databases
+2025-05-08 13:03:25,506 - INFO - Available tables in mysql: ['dept_copy', 'student']
+2025-05-08 13:03:31,871 - INFO - Selected table: dept_copy
+2025-05-08 13:03:35,659 - INFO - Destination table name: dept
+2025-05-08 13:03:35,663 - WARNING - Table dept already exists in oracle.
+2025-05-08 13:03:35,664 - INFO - Connections closed.
+2025-05-08 14:00:26,907 - INFO - Source DB: postgresql, Destination DB: oracle, Operation: insert
+2025-05-08 14:00:27,071 - INFO - Connected to source and destination databases
+2025-05-08 14:00:27,076 - INFO - Available tables in postgresql: ['student_copy', 'emp', 'student', 'employee', 'department']
+2025-05-08 14:00:31,737 - INFO - Selected table: student
+2025-05-08 14:00:34,257 - INFO - Destination table name: stu
+2025-05-08 14:00:34,261 - INFO - Table stu does not exist. Creating it...
+2025-05-08 14:00:34,272 - INFO - Schema for student: [('id', 'integer'), ('name', 'character varying'), ('age', 'integer'), ('email', 'character varying'), ('enrollment_date', 'date')]
+2025-05-08 14:00:34,292 - INFO - Table stu created successfully in oracle.
+2025-05-08 14:00:34,296 - INFO - Data transferred from student to stu
+2025-05-08 14:00:34,297 - INFO - Connections closed.
+2025-05-08 15:08:17,528 - INFO - Source DB: oracle, Destination DB: mysql, Operation: create
+2025-05-08 15:08:17,820 - INFO - Connected to source and destination databases
+2025-05-08 15:08:17,866 - INFO - Available tables in oracle: ['LOGMNR_PARAMETER$', 'LOGMNR_SESSION$', 'MVIEW$_ADV_WORKLOAD', 'MVIEW$_ADV_BASETABLE', 'MVIEW$_ADV_SQLDEPEND', 'MVIEW$_ADV_PRETTY', 'MVIEW$_ADV_TEMP', 'MVIEW$_ADV_FILTER', 'MVIEW$_ADV_LOG', 'MVIEW$_ADV_FILTERINSTANCE', 'MVIEW$_ADV_LEVEL', 'MVIEW$_ADV_ROLLUP', 'MVIEW$_ADV_AJG', 'MVIEW$_ADV_FJG', 'MVIEW$_ADV_GC', 'MVIEW$_ADV_CLIQUE', 'MVIEW$_ADV_ELIGIBLE', 'MVIEW$_ADV_OUTPUT', 'MVIEW$_ADV_EXCEPTIONS', 'MVIEW$_ADV_PARAMETERS', 'MVIEW$_ADV_INFO', 'MVIEW$_ADV_JOURNAL', 'MVIEW$_ADV_PLAN', 'AQ$_QUEUE_TABLES', 'AQ$_QUEUES', 'AQ$_SCHEDULES', 'AQ$_INTERNET_AGENTS', 'AQ$_INTERNET_AGENT_PRIVS', 'DEF$_ERROR', 'DEF$_DESTINATION', 'DEF$_CALLDEST', 'DEF$_DEFAULTDEST', 'DEF$_LOB', 'DEF$_PROPAGATOR', 'DEF$_ORIGIN', 'DEF$_PUSHED_TRANSACTIONS', 'REPCAT$_REPCAT', 'REPCAT$_FLAVORS', 'REPCAT$_REPSCHEMA', 'REPCAT$_SNAPGROUP', 'REPCAT$_REPOBJECT', 'REPCAT$_REPCOLUMN', 'REPCAT$_KEY_COLUMNS', 'REPCAT$_GENERATED', 'REPCAT$_REPPROP', 'REPCAT$_REPCATLOG', 'REPCAT$_DDL', 'REPCAT$_REPGROUP_PRIVS', 'REPCAT$_PRIORITY_GROUP', 'REPCAT$_PRIORITY', 'REPCAT$_COLUMN_GROUP', 'REPCAT$_GROUPED_COLUMN', 'REPCAT$_CONFLICT', 'REPCAT$_RESOLUTION_METHOD', 'REPCAT$_RESOLUTION', 'REPCAT$_RESOLUTION_STATISTICS', 'REPCAT$_RESOL_STATS_CONTROL', 'REPCAT$_PARAMETER_COLUMN', 'REPCAT$_AUDIT_ATTRIBUTE', 'REPCAT$_AUDIT_COLUMN', 'REPCAT$_FLAVOR_OBJECTS', 'REPCAT$_TEMPLATE_STATUS', 'REPCAT$_TEMPLATE_TYPES', 'REPCAT$_REFRESH_TEMPLATES', 'REPCAT$_USER_AUTHORIZATIONS', 'REPCAT$_OBJECT_TYPES', 'REPCAT$_TEMPLATE_REFGROUPS', 'REPCAT$_TEMPLATE_OBJECTS', 'REPCAT$_TEMPLATE_PARMS', 'REPCAT$_OBJECT_PARMS', 'REPCAT$_USER_PARM_VALUES', 'REPCAT$_TEMPLATE_SITES', 'REPCAT$_SITE_OBJECTS', 'REPCAT$_RUNTIME_PARMS', 'REPCAT$_TEMPLATE_TARGETS', 'REPCAT$_EXCEPTIONS', 'REPCAT$_INSTANTIATION_DDL', 'REPCAT$_EXTENSION', 'REPCAT$_SITES_NEW', 'LOGSTDBY$PARAMETERS', 'LOGSTDBY$EVENTS', 'LOGSTDBY$APPLY_MILESTONE', 'LOGSTDBY$SCN', 'LOGSTDBY$FLASHBACK_SCN', 'LOGSTDBY$PLSQL', 'LOGSTDBY$SKIP_TRANSACTION', 'LOGSTDBY$SKIP', 'LOGSTDBY$SKIP_SUPPORT', 'LOGSTDBY$HISTORY', 'LOGSTDBY$EDS_TABLES', 'DEF$_AQCALL', 'DEF$_AQERROR', 'SQLPLUS_PRODUCT_PROFILE', 'HELP', 'EMPLOYEE', 'STUDENT_COPY', 'STU_COPY', 'DEPT', 'EMP_COPY', 'EMP', 'STU', 'LOGMNR_GT_TAB_INCLUDE$', 'LOGMNR_GT_USER_INCLUDE$', 'LOGMNR_GT_XID_INCLUDE$', 'LOGMNRT_MDDL$', 'OL$', 'OL$HINTS', 'OL$NODES', 'LOGMNR_DICTSTATE$', 'LOGMNRC_GTLO', 'LOGMNRC_GTCS', 'LOGMNRC_GSII', 'LOGMNRC_GSBA', 'LOGMNR_SEED$', 'LOGMNR_DICTIONARY$', 'LOGMNR_OBJ$', 'LOGMNR_TAB$', 'LOGMNR_COL$', 'LOGMNR_ATTRCOL$', 'LOGMNR_TS$', 'LOGMNR_IND$', 'LOGMNR_USER$', 'LOGMNR_TABPART$', 'LOGMNR_TABSUBPART$', 'LOGMNR_TABCOMPART$', 'LOGMNR_TYPE$', 'LOGMNR_COLTYPE$', 'LOGMNR_ATTRIBUTE$', 'LOGMNR_LOB$', 'LOGMNR_CDEF$', 'LOGMNR_CCOL$', 'LOGMNR_ICOL$', 'LOGMNR_LOBFRAG$', 'LOGMNR_INDPART$', 'LOGMNR_INDSUBPART$', 'LOGMNR_INDCOMPART$', 'LOGMNR_LOGMNR_BUILDLOG', 'LOGMNR_NTAB$', 'LOGMNR_OPQTYPE$', 'LOGMNR_SUBCOLTYPE$', 'LOGMNR_KOPM$', 'LOGMNR_PROPS$', 'LOGMNR_ENC$', 'LOGMNR_REFCON$', 'LOGMNR_PARTOBJ$', 'LOGMNRP_CTAS_PART_MAP', 'LOGSTDBY$APPLY_PROGRESS', 'LOGMNR_INTEGRATED_SPILL$', 'LOGMNR_PROCESSED_LOG$', 'LOGMNR_UID$', 'LOGMNRC_DBNAME_UID_MAP', 'LOGMNR_LOG$', 'LOGMNR_ERROR$', 'LOGMNR_RESTART_CKPT$', 'LOGMNR_GLOBAL$', 'LOGMNR_SESSION_EVOLVE$', 'LOGMNR_FILTER$', 'LOGMNR_AGE_SPILL$', 'LOGMNR_SPILL$', 'LOGMNR_RESTART_CKPT_TXINFO$', 'LOGMNR_SESSION_ACTIONS$']
+2025-05-08 15:13:39,058 - INFO - Selected table: 
+2025-05-08 15:13:42,420 - INFO - Connections closed.
+2025-05-08 15:28:50,219 - INFO - Source DB: oracle, Destination DB: mysql, Operation: create
+2025-05-08 15:28:50,505 - INFO - Connected to source and destination databases
+2025-05-08 15:28:50,567 - INFO - Available tables in oracle: ['LOGMNR_PARAMETER$', 'LOGMNR_SESSION$', 'MVIEW$_ADV_WORKLOAD', 'MVIEW$_ADV_BASETABLE', 'MVIEW$_ADV_SQLDEPEND', 'MVIEW$_ADV_PRETTY', 'MVIEW$_ADV_TEMP', 'MVIEW$_ADV_FILTER', 'MVIEW$_ADV_LOG', 'MVIEW$_ADV_FILTERINSTANCE', 'MVIEW$_ADV_LEVEL', 'MVIEW$_ADV_ROLLUP', 'MVIEW$_ADV_AJG', 'MVIEW$_ADV_FJG', 'MVIEW$_ADV_GC', 'MVIEW$_ADV_CLIQUE', 'MVIEW$_ADV_ELIGIBLE', 'MVIEW$_ADV_OUTPUT', 'MVIEW$_ADV_EXCEPTIONS', 'MVIEW$_ADV_PARAMETERS', 'MVIEW$_ADV_INFO', 'MVIEW$_ADV_JOURNAL', 'MVIEW$_ADV_PLAN', 'AQ$_QUEUE_TABLES', 'AQ$_QUEUES', 'AQ$_SCHEDULES', 'AQ$_INTERNET_AGENTS', 'AQ$_INTERNET_AGENT_PRIVS', 'DEF$_ERROR', 'DEF$_DESTINATION', 'DEF$_CALLDEST', 'DEF$_DEFAULTDEST', 'DEF$_LOB', 'DEF$_PROPAGATOR', 'DEF$_ORIGIN', 'DEF$_PUSHED_TRANSACTIONS', 'REPCAT$_REPCAT', 'REPCAT$_FLAVORS', 'REPCAT$_REPSCHEMA', 'REPCAT$_SNAPGROUP', 'REPCAT$_REPOBJECT', 'REPCAT$_REPCOLUMN', 'REPCAT$_KEY_COLUMNS', 'REPCAT$_GENERATED', 'REPCAT$_REPPROP', 'REPCAT$_REPCATLOG', 'REPCAT$_DDL', 'REPCAT$_REPGROUP_PRIVS', 'REPCAT$_PRIORITY_GROUP', 'REPCAT$_PRIORITY', 'REPCAT$_COLUMN_GROUP', 'REPCAT$_GROUPED_COLUMN', 'REPCAT$_CONFLICT', 'REPCAT$_RESOLUTION_METHOD', 'REPCAT$_RESOLUTION', 'REPCAT$_RESOLUTION_STATISTICS', 'REPCAT$_RESOL_STATS_CONTROL', 'REPCAT$_PARAMETER_COLUMN', 'REPCAT$_AUDIT_ATTRIBUTE', 'REPCAT$_AUDIT_COLUMN', 'REPCAT$_FLAVOR_OBJECTS', 'REPCAT$_TEMPLATE_STATUS', 'REPCAT$_TEMPLATE_TYPES', 'REPCAT$_REFRESH_TEMPLATES', 'REPCAT$_USER_AUTHORIZATIONS', 'REPCAT$_OBJECT_TYPES', 'REPCAT$_TEMPLATE_REFGROUPS', 'REPCAT$_TEMPLATE_OBJECTS', 'REPCAT$_TEMPLATE_PARMS', 'REPCAT$_OBJECT_PARMS', 'REPCAT$_USER_PARM_VALUES', 'REPCAT$_TEMPLATE_SITES', 'REPCAT$_SITE_OBJECTS', 'REPCAT$_RUNTIME_PARMS', 'REPCAT$_TEMPLATE_TARGETS', 'REPCAT$_EXCEPTIONS', 'REPCAT$_INSTANTIATION_DDL', 'REPCAT$_EXTENSION', 'REPCAT$_SITES_NEW', 'LOGSTDBY$PARAMETERS', 'LOGSTDBY$EVENTS', 'LOGSTDBY$APPLY_MILESTONE', 'LOGSTDBY$SCN', 'LOGSTDBY$FLASHBACK_SCN', 'LOGSTDBY$PLSQL', 'LOGSTDBY$SKIP_TRANSACTION', 'LOGSTDBY$SKIP', 'LOGSTDBY$SKIP_SUPPORT', 'LOGSTDBY$HISTORY', 'LOGSTDBY$EDS_TABLES', 'DEF$_AQCALL', 'DEF$_AQERROR', 'SQLPLUS_PRODUCT_PROFILE', 'HELP', 'EMPLOYEE', 'STUDENT_COPY', 'STU_COPY', 'DEPT', 'EMP_COPY', 'EMP', 'STU', 'LOGMNR_GT_TAB_INCLUDE$', 'LOGMNR_GT_USER_INCLUDE$', 'LOGMNR_GT_XID_INCLUDE$', 'LOGMNRT_MDDL$', 'OL$', 'OL$HINTS', 'OL$NODES', 'LOGMNR_DICTSTATE$', 'LOGMNRC_GTLO', 'LOGMNRC_GTCS', 'LOGMNRC_GSII', 'LOGMNRC_GSBA', 'LOGMNR_SEED$', 'LOGMNR_DICTIONARY$', 'LOGMNR_OBJ$', 'LOGMNR_TAB$', 'LOGMNR_COL$', 'LOGMNR_ATTRCOL$', 'LOGMNR_TS$', 'LOGMNR_IND$', 'LOGMNR_USER$', 'LOGMNR_TABPART$', 'LOGMNR_TABSUBPART$', 'LOGMNR_TABCOMPART$', 'LOGMNR_TYPE$', 'LOGMNR_COLTYPE$', 'LOGMNR_ATTRIBUTE$', 'LOGMNR_LOB$', 'LOGMNR_CDEF$', 'LOGMNR_CCOL$', 'LOGMNR_ICOL$', 'LOGMNR_LOBFRAG$', 'LOGMNR_INDPART$', 'LOGMNR_INDSUBPART$', 'LOGMNR_INDCOMPART$', 'LOGMNR_LOGMNR_BUILDLOG', 'LOGMNR_NTAB$', 'LOGMNR_OPQTYPE$', 'LOGMNR_SUBCOLTYPE$', 'LOGMNR_KOPM$', 'LOGMNR_PROPS$', 'LOGMNR_ENC$', 'LOGMNR_REFCON$', 'LOGMNR_PARTOBJ$', 'LOGMNRP_CTAS_PART_MAP', 'LOGSTDBY$APPLY_PROGRESS', 'LOGMNR_INTEGRATED_SPILL$', 'LOGMNR_PROCESSED_LOG$', 'LOGMNR_UID$', 'LOGMNRC_DBNAME_UID_MAP', 'LOGMNR_LOG$', 'LOGMNR_ERROR$', 'LOGMNR_RESTART_CKPT$', 'LOGMNR_GLOBAL$', 'LOGMNR_SESSION_EVOLVE$', 'LOGMNR_FILTER$', 'LOGMNR_AGE_SPILL$', 'LOGMNR_SPILL$', 'LOGMNR_RESTART_CKPT_TXINFO$', 'LOGMNR_SESSION_ACTIONS$']
+2025-05-08 15:30:59,611 - INFO - Connections closed.
+2025-05-08 15:41:33,806 - INFO - Source DB: oracle, Destination DB: mysql, Operation: create
+2025-05-08 15:41:34,090 - INFO - Connected to source and destination databases
+2025-05-08 15:41:34,130 - INFO - Available tables in oracle: ['LOGMNR_PARAMETER$', 'LOGMNR_SESSION$', 'EMPLOYEE', 'STUDENT_COPY', 'STU_COPY', 'DEPT', 'EMP_COPY', 'EMP', 'STU', 'LOGMNR_GT_TAB_INCLUDE$', 'LOGMNR_GT_USER_INCLUDE$', 'LOGMNR_GT_XID_INCLUDE$', 'LOGMNRT_MDDL$', 'LOGMNR_DICTSTATE$', 'LOGMNRC_GTLO', 'LOGMNRC_GTCS', 'LOGMNRC_GSII', 'LOGMNRC_GSBA', 'LOGMNR_SEED$', 'LOGMNR_DICTIONARY$', 'LOGMNR_OBJ$', 'LOGMNR_TAB$', 'LOGMNR_COL$', 'LOGMNR_ATTRCOL$', 'LOGMNR_TS$', 'LOGMNR_IND$', 'LOGMNR_USER$', 'LOGMNR_TABPART$', 'LOGMNR_TABSUBPART$', 'LOGMNR_TABCOMPART$', 'LOGMNR_TYPE$', 'LOGMNR_COLTYPE$', 'LOGMNR_ATTRIBUTE$', 'LOGMNR_LOB$', 'LOGMNR_CDEF$', 'LOGMNR_CCOL$', 'LOGMNR_ICOL$', 'LOGMNR_LOBFRAG$', 'LOGMNR_INDPART$', 'LOGMNR_INDSUBPART$', 'LOGMNR_INDCOMPART$', 'LOGMNR_LOGMNR_BUILDLOG', 'LOGMNR_NTAB$', 'LOGMNR_OPQTYPE$', 'LOGMNR_SUBCOLTYPE$', 'LOGMNR_KOPM$', 'LOGMNR_PROPS$', 'LOGMNR_ENC$', 'LOGMNR_REFCON$', 'LOGMNR_PARTOBJ$', 'LOGMNRP_CTAS_PART_MAP', 'LOGMNR_RESTART_CKPT$', 'LOGMNR_GLOBAL$', 'LOGMNR_SESSION_EVOLVE$', 'LOGMNR_FILTER$', 'LOGMNR_INTEGRATED_SPILL$', 'LOGMNR_PROCESSED_LOG$', 'LOGMNR_UID$', 'LOGMNR_AGE_SPILL$', 'LOGMNR_SPILL$', 'LOGMNRC_DBNAME_UID_MAP', 'LOGMNR_RESTART_CKPT_TXINFO$', 'LOGMNR_SESSION_ACTIONS$', 'LOGMNR_LOG$', 'LOGMNR_ERROR$']
+2025-05-08 15:52:14,947 - INFO - Connections closed.
+2025-05-08 15:52:28,970 - INFO - Source DB: oracle, Destination DB: mysql, Operation: create
+2025-05-08 15:52:29,258 - INFO - Connected to source and destination databases
+2025-05-08 15:52:29,320 - INFO - Available tables in oracle: ['LOGMNR_PARAMETER$', 'LOGMNR_SESSION$', 'MVIEW$_ADV_WORKLOAD', 'MVIEW$_ADV_BASETABLE', 'MVIEW$_ADV_SQLDEPEND', 'MVIEW$_ADV_PRETTY', 'MVIEW$_ADV_TEMP', 'MVIEW$_ADV_FILTER', 'MVIEW$_ADV_LOG', 'MVIEW$_ADV_FILTERINSTANCE', 'MVIEW$_ADV_LEVEL', 'MVIEW$_ADV_ROLLUP', 'MVIEW$_ADV_AJG', 'MVIEW$_ADV_FJG', 'MVIEW$_ADV_GC', 'MVIEW$_ADV_CLIQUE', 'MVIEW$_ADV_ELIGIBLE', 'MVIEW$_ADV_OUTPUT', 'MVIEW$_ADV_EXCEPTIONS', 'MVIEW$_ADV_PARAMETERS', 'MVIEW$_ADV_INFO', 'MVIEW$_ADV_JOURNAL', 'MVIEW$_ADV_PLAN', 'AQ$_QUEUE_TABLES', 'AQ$_QUEUES', 'AQ$_SCHEDULES', 'AQ$_INTERNET_AGENTS', 'AQ$_INTERNET_AGENT_PRIVS', 'DEF$_ERROR', 'DEF$_DESTINATION', 'DEF$_CALLDEST', 'DEF$_DEFAULTDEST', 'DEF$_LOB', 'DEF$_PROPAGATOR', 'DEF$_ORIGIN', 'DEF$_PUSHED_TRANSACTIONS', 'REPCAT$_REPCAT', 'REPCAT$_FLAVORS', 'REPCAT$_REPSCHEMA', 'REPCAT$_SNAPGROUP', 'REPCAT$_REPOBJECT', 'REPCAT$_REPCOLUMN', 'REPCAT$_KEY_COLUMNS', 'REPCAT$_GENERATED', 'REPCAT$_REPPROP', 'REPCAT$_REPCATLOG', 'REPCAT$_DDL', 'REPCAT$_REPGROUP_PRIVS', 'REPCAT$_PRIORITY_GROUP', 'REPCAT$_PRIORITY', 'REPCAT$_COLUMN_GROUP', 'REPCAT$_GROUPED_COLUMN', 'REPCAT$_CONFLICT', 'REPCAT$_RESOLUTION_METHOD', 'REPCAT$_RESOLUTION', 'REPCAT$_RESOLUTION_STATISTICS', 'REPCAT$_RESOL_STATS_CONTROL', 'REPCAT$_PARAMETER_COLUMN', 'REPCAT$_AUDIT_ATTRIBUTE', 'REPCAT$_AUDIT_COLUMN', 'REPCAT$_FLAVOR_OBJECTS', 'REPCAT$_TEMPLATE_STATUS', 'REPCAT$_TEMPLATE_TYPES', 'REPCAT$_REFRESH_TEMPLATES', 'REPCAT$_USER_AUTHORIZATIONS', 'REPCAT$_OBJECT_TYPES', 'REPCAT$_TEMPLATE_REFGROUPS', 'REPCAT$_TEMPLATE_OBJECTS', 'REPCAT$_TEMPLATE_PARMS', 'REPCAT$_OBJECT_PARMS', 'REPCAT$_USER_PARM_VALUES', 'REPCAT$_TEMPLATE_SITES', 'REPCAT$_SITE_OBJECTS', 'REPCAT$_RUNTIME_PARMS', 'REPCAT$_TEMPLATE_TARGETS', 'REPCAT$_EXCEPTIONS', 'REPCAT$_INSTANTIATION_DDL', 'REPCAT$_EXTENSION', 'REPCAT$_SITES_NEW', 'LOGSTDBY$PARAMETERS', 'LOGSTDBY$EVENTS', 'LOGSTDBY$APPLY_MILESTONE', 'LOGSTDBY$SCN', 'LOGSTDBY$FLASHBACK_SCN', 'LOGSTDBY$PLSQL', 'LOGSTDBY$SKIP_TRANSACTION', 'LOGSTDBY$SKIP', 'LOGSTDBY$SKIP_SUPPORT', 'LOGSTDBY$HISTORY', 'LOGSTDBY$EDS_TABLES', 'DEF$_AQCALL', 'DEF$_AQERROR', 'SQLPLUS_PRODUCT_PROFILE', 'HELP', 'EMPLOYEE', 'STUDENT_COPY', 'STU_COPY', 'DEPT', 'EMP_COPY', 'EMP', 'STU', 'LOGMNR_GT_TAB_INCLUDE$', 'LOGMNR_GT_USER_INCLUDE$', 'LOGMNR_GT_XID_INCLUDE$', 'LOGMNRT_MDDL$', 'OL$', 'OL$HINTS', 'OL$NODES', 'LOGMNR_DICTSTATE$', 'LOGMNRC_GTLO', 'LOGMNRC_GTCS', 'LOGMNRC_GSII', 'LOGMNRC_GSBA', 'LOGMNR_SEED$', 'LOGMNR_DICTIONARY$', 'LOGMNR_OBJ$', 'LOGMNR_TAB$', 'LOGMNR_COL$', 'LOGMNR_ATTRCOL$', 'LOGMNR_TS$', 'LOGMNR_IND$', 'LOGMNR_USER$', 'LOGMNR_TABPART$', 'LOGMNR_TABSUBPART$', 'LOGMNR_TABCOMPART$', 'LOGMNR_TYPE$', 'LOGMNR_COLTYPE$', 'LOGMNR_ATTRIBUTE$', 'LOGMNR_LOB$', 'LOGMNR_CDEF$', 'LOGMNR_CCOL$', 'LOGMNR_ICOL$', 'LOGMNR_LOBFRAG$', 'LOGMNR_INDPART$', 'LOGMNR_INDSUBPART$', 'LOGMNR_INDCOMPART$', 'LOGMNR_LOGMNR_BUILDLOG', 'LOGMNR_NTAB$', 'LOGMNR_OPQTYPE$', 'LOGMNR_SUBCOLTYPE$', 'LOGMNR_KOPM$', 'LOGMNR_PROPS$', 'LOGMNR_ENC$', 'LOGMNR_REFCON$', 'LOGMNR_PARTOBJ$', 'LOGMNRP_CTAS_PART_MAP', 'LOGSTDBY$APPLY_PROGRESS', 'LOGMNR_INTEGRATED_SPILL$', 'LOGMNR_PROCESSED_LOG$', 'LOGMNR_UID$', 'LOGMNRC_DBNAME_UID_MAP', 'LOGMNR_LOG$', 'LOGMNR_ERROR$', 'LOGMNR_RESTART_CKPT$', 'LOGMNR_GLOBAL$', 'LOGMNR_SESSION_EVOLVE$', 'LOGMNR_FILTER$', 'LOGMNR_AGE_SPILL$', 'LOGMNR_SPILL$', 'LOGMNR_RESTART_CKPT_TXINFO$', 'LOGMNR_SESSION_ACTIONS$']
+2025-05-08 15:56:29,722 - INFO - Connections closed.
+2025-05-08 15:56:44,726 - INFO - Source DB: oracle, Destination DB: mysql, Operation: create
+2025-05-08 15:56:45,054 - INFO - Connected to source and destination databases
+2025-05-08 15:56:45,086 - INFO - Available tables in oracle: ['SQLPLUS_PRODUCT_PROFILE', 'HELP', 'EMPLOYEE', 'STUDENT_COPY', 'STU_COPY', 'DEPT', 'EMP_COPY', 'EMP', 'STU', 'LOGMNRC_GTLO', 'LOGMNRC_GTCS', 'LOGMNRC_GSII', 'LOGMNRC_GSBA', 'LOGMNR_LOGMNR_BUILDLOG', 'LOGMNRP_CTAS_PART_MAP', 'LOGMNRC_DBNAME_UID_MAP']
+2025-05-08 15:58:17,235 - INFO - Connections closed.
+2025-05-08 15:58:26,723 - INFO - Source DB: oracle, Destination DB: mysql, Operation: create
+2025-05-08 15:58:26,938 - INFO - Connected to source and destination databases
+2025-05-08 15:58:26,969 - INFO - Available tables in oracle: ['EMPLOYEE', 'STUDENT_COPY', 'STU_COPY', 'DEPT', 'EMP_COPY', 'EMP', 'STU']
+2025-05-08 16:15:38,647 - INFO - Selected table: emp_copy
+2025-05-08 16:15:45,652 - INFO - Destination table name: emp
+2025-05-08 16:15:45,670 - INFO - Schema for emp_copy: [('ENROLLMENT_DATE', 'DATE'), ('ID', 'VARCHAR2'), ('NAME', 'VARCHAR2'), ('AGE', 'VARCHAR2'), ('EMAIL', 'VARCHAR2')]
+2025-05-08 16:15:46,123 - INFO - Table emp created successfully in mysql.
+2025-05-08 16:15:46,126 - INFO - Connections closed.
+2025-05-13 11:01:24,938 - INFO - Source DB: , Destination DB: , Operation: create
+2025-05-13 11:01:25,036 - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 42, in <module>
+    src_conn, src_cursor = connection.connect_database(src_type)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\connection.py", line 34, in connect_database
+    return conn, conn.cursor()
+           ^^^^
+UnboundLocalError: cannot access local variable 'conn' where it is not associated with a value
+2025-05-13 11:01:25,063 - INFO - Connections closed.
+2025-05-13 11:05:07,143 - INFO - Source DB: , Destination DB: , Operation: 
+2025-05-13 11:05:07,143 - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 48, in <module>
+    src_conn, src_cursor = connection.connect_database(src_type)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\connection.py", line 34, in connect_database
+    return conn, conn.cursor()
+           ^^^^
+UnboundLocalError: cannot access local variable 'conn' where it is not associated with a value
+2025-05-13 11:05:07,145 - INFO - Connections closed.
+2025-05-13 11:05:20,821 - INFO - Source DB: , Destination DB: , Operation: 
+2025-05-13 11:05:20,822 - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 48, in <module>
+    src_conn, src_cursor = connection.connect_database(src_type)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\connection.py", line 34, in connect_database
+    return conn, conn.cursor()
+           ^^^^
+UnboundLocalError: cannot access local variable 'conn' where it is not associated with a value
+2025-05-13 11:05:20,823 - INFO - Connections closed.
+2025-05-13 11:06:21,806 - INFO - Source DB: , Destination DB: , Operation: 
+2025-05-13 11:06:21,806 - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 48, in <module>
+    src_conn, src_cursor = connection.connect_database(src_type)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\connection.py", line 34, in connect_database
+    return conn, conn.cursor()
+           ^^^^
+UnboundLocalError: cannot access local variable 'conn' where it is not associated with a value
+2025-05-13 11:06:21,807 - INFO - Connections closed.
+2025-05-13 11:06:50,112 - INFO - Source DB: , Destination DB: , Operation: 
+2025-05-13 11:06:50,112 - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 48, in <module>
+    src_conn, src_cursor = connection.connect_database(src_type)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\connection.py", line 34, in connect_database
+    return conn, conn.cursor()
+           ^^^^
+UnboundLocalError: cannot access local variable 'conn' where it is not associated with a value
+2025-05-13 11:06:50,114 - INFO - Connections closed.
+2025-05-13 11:06:57,241 - INFO - Source DB: , Destination DB: , Operation: 
+2025-05-13 11:06:57,241 - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "c:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 48, in <module>
+    src_conn, src_cursor = connection.connect_database(src_type)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "c:\Users\Devesh Rayadu\.vscode\data_transfer\connection.py", line 34, in connect_database
+    return conn, conn.cursor()
+           ^^^^
+UnboundLocalError: cannot access local variable 'conn' where it is not associated with a value
+2025-05-13 11:06:57,243 - INFO - Connections closed.
+2025-05-13 11:07:03,007 - INFO - Source DB: , Destination DB: , Operation: 
+2025-05-13 11:07:03,007 - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 48, in <module>
+    src_conn, src_cursor = connection.connect_database(src_type)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\connection.py", line 34, in connect_database
+    return conn, conn.cursor()
+           ^^^^
+UnboundLocalError: cannot access local variable 'conn' where it is not associated with a value
+2025-05-13 11:07:03,008 - INFO - Connections closed.
+2025-05-13 11:12:02,244 - INFO - Source DB: None, Destination DB: None, Operation: None
+2025-05-13 11:12:02,245 - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 63, in <module>
+    src_conn, src_cursor = connection.connect_database(src_type)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\connection.py", line 34, in connect_database
+    return conn, conn.cursor()
+           ^^^^
+UnboundLocalError: cannot access local variable 'conn' where it is not associated with a value
+2025-05-13 11:12:02,246 - INFO - Connections closed.
+2025-05-13 11:20:44,183 - INFO - Fetching tables for source database: oracle
+2025-05-13 11:20:46,367 - INFO - Tables retrieved from oracle: ['EMPLOYEE', 'STUDENT_COPY', 'STU_COPY', 'DEPT', 'EMP_COPY', 'EMP', 'STU']
+2025-05-13 11:21:09,490 - INFO - Connections closed.
+2025-05-13 11:21:20,110 - INFO - Connections closed.
+2025-05-13 11:21:26,277 - INFO - Connections closed.
+2025-05-13 11:21:47,016 - INFO - Connections closed.
+2025-05-13 11:22:30,813 - INFO - Source DB: None, Destination DB: None, Operation: None
+2025-05-13 11:22:30,814 - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 63, in <module>
+    src_conn, src_cursor = connection.connect_database(src_type)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\connection.py", line 34, in connect_database
+    return conn, conn.cursor()
+           ^^^^
+UnboundLocalError: cannot access local variable 'conn' where it is not associated with a value
+2025-05-13 11:22:30,815 - INFO - Connections closed.
+2025-05-13 11:24:17,021 - INFO - Source DB: None, Destination DB: None, Operation: None
+2025-05-13 11:24:17,022 - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 63, in <module>
+    src_conn, src_cursor = connection.connect_database(src_type)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\connection.py", line 34, in connect_database
+    return conn, conn.cursor()
+           ^^^^
+UnboundLocalError: cannot access local variable 'conn' where it is not associated with a value
+2025-05-13 11:24:17,024 - INFO - Connections closed.
+2025-05-13 11:28:09,871 - INFO - Source DB: , Destination DB: , Operation: 
+2025-05-13 11:28:09,871 - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 63, in <module>
+    src_conn, src_cursor = connection.connect_database(src_type)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\connection.py", line 34, in connect_database
+    return conn, conn.cursor()
+           ^^^^
+UnboundLocalError: cannot access local variable 'conn' where it is not associated with a value
+2025-05-13 11:28:09,873 - INFO - Connections closed.
+2025-05-13 11:28:49,177 - INFO - Source DB: , Destination DB: , Operation: 
+2025-05-13 11:28:49,178 - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 63, in <module>
+    src_conn, src_cursor = connection.connect_database(src_type)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\connection.py", line 34, in connect_database
+    return conn, conn.cursor()
+           ^^^^
+UnboundLocalError: cannot access local variable 'conn' where it is not associated with a value
+2025-05-13 11:28:49,179 - INFO - Connections closed.
+2025-05-13 12:13:40,500 - INFO - Source DB: , Destination DB: , Operation: 
+2025-05-13 12:13:40,501 - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 45, in <module>
+    src_conn, src_cursor = connection.connect_database(src_type)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\connection.py", line 34, in connect_database
+    return conn, conn.cursor()
+           ^^^^
+UnboundLocalError: cannot access local variable 'conn' where it is not associated with a value
+2025-05-13 12:13:40,503 - INFO - Connections closed.
+2025-05-13 12:14:23,894 - INFO - Source DB: , Destination DB: , Operation: 
+2025-05-13 12:14:23,894 - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 46, in <module>
+    src_conn, src_cursor = connection.connect_database(src_type)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\connection.py", line 34, in connect_database
+    return conn, conn.cursor()
+           ^^^^
+UnboundLocalError: cannot access local variable 'conn' where it is not associated with a value
+2025-05-13 12:14:23,896 - INFO - Connections closed.
+2025-05-13 12:16:01,577 - INFO - Source DB: , Destination DB: , Operation: 
+2025-05-13 12:16:01,578 - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 53, in <module>
+    src_conn, src_cursor = connection.connect_database(src_type)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\connection.py", line 34, in connect_database
+    return conn, conn.cursor()
+           ^^^^
+UnboundLocalError: cannot access local variable 'conn' where it is not associated with a value
+2025-05-13 12:16:01,581 - INFO - Connections closed.
+2025-05-13 12:16:59,319 - INFO - Source DB: , Destination DB: , Operation: 
+2025-05-13 12:16:59,319 - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 53, in <module>
+    src_conn, src_cursor = connection.connect_database(src_type)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\connection.py", line 34, in connect_database
+    return conn, conn.cursor()
+           ^^^^
+UnboundLocalError: cannot access local variable 'conn' where it is not associated with a value
+2025-05-13 12:16:59,320 - INFO - Connections closed.
+2025-05-13 12:23:29,710 - INFO - Source DB: , Destination DB: , Operation: 
+2025-05-13 12:23:29,710 - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 52, in <module>
+    src_conn, src_cursor = connection.connect_database(src_type)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\connection.py", line 34, in connect_database
+    return conn, conn.cursor()
+           ^^^^
+UnboundLocalError: cannot access local variable 'conn' where it is not associated with a value
+2025-05-13 12:23:29,712 - INFO - Connections closed.
+2025-05-13 14:25:01,736 - INFO - Source DB: PY_VAR0, Destination DB: PY_VAR1, Operation: PY_VAR2
+2025-05-13 14:25:01,737 - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 46, in <module>
+    src_conn, src_cursor = connection.connect_database(src_type)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\connection.py", line 34, in connect_database
+    return conn, conn.cursor()
+           ^^^^
+UnboundLocalError: cannot access local variable 'conn' where it is not associated with a value
+2025-05-13 14:25:01,738 - INFO - Connections closed.
+2025-05-13 14:39:04,124 - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 30, in <module>
+    tk.Label(t,textvariable=src_type).pack(pady=10)
+                            ^^^^^^^^
+NameError: name 'src_type' is not defined. Did you mean: 'src_type1'?
+2025-05-13 14:39:04,125 - INFO - Connections closed.
+2025-05-13 14:39:43,093 - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 45, in <module>
+    logger.info(f"Source DB: {src_type}, Destination DB: {dst_type}, Operation: {oper}")
+                              ^^^^^^^^
+NameError: name 'src_type' is not defined. Did you mean: 'src_type1'?
+2025-05-13 14:39:43,094 - INFO - Connections closed.
+2025-05-13 14:45:52,293 - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 43, in <module>
+    logger.info(f"Source DB: {src_type}, Destination DB: {dst_type}, Operation: {oper}")
+                              ^^^^^^^^
+NameError: name 'src_type' is not defined. Did you mean: 'src_type1'?
+2025-05-13 14:45:52,294 - INFO - Connections closed.
+2025-05-13 14:46:32,250 - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 43, in <module>
+    logger.info(f"Source DB: {src_type}, Destination DB: {dst_type}, Operation: {oper}")
+                              ^^^^^^^^
+NameError: name 'src_type' is not defined. Did you mean: 'src_type1'?
+2025-05-13 14:46:32,251 - INFO - Connections closed.
+2025-05-13 14:47:04,717 - ERROR - An unexpected error occurred.
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 43, in <module>
+    logger.info(f"Source DB: {src_type}, Destination DB: {dst_type}, Operation: {oper}")
+                              ^^^^^^^^
+NameError: name 'src_type' is not defined. Did you mean: 'src_type1'?
+2025-05-13 14:47:04,719 - INFO - Connections closed.
+2025-05-13 14:50:31,000 - INFO - Source DB: oracle, Destination DB: mysql, Operation: create
+2025-05-13 14:50:33,507 - INFO - Connected to source and destination databases
+2025-05-13 14:50:33,520 - INFO - Available tables in oracle: ['EMPLOYEE', 'STUDENT_COPY', 'STU_COPY', 'DEPT', 'EMP_COPY', 'EMP', 'STU']
+2025-05-13 14:50:39,924 - INFO - Selected table: dept
+2025-05-13 14:50:45,070 - INFO - Destination table name: dept2
+2025-05-13 14:50:45,305 - INFO - Schema for dept: [('DEPT_ID', 'NUMBER'), ('DEPT_NAME', 'VARCHAR2'), ('DEPT_HEAD', 'VARCHAR2')]
+2025-05-13 14:50:46,026 - INFO - Table dept2 created successfully in mysql.
+2025-05-13 14:50:46,030 - INFO - Connections closed.
+2025-05-13 15:31:37,389 - INFO - Connections closed.
+2025-05-13 15:31:49,210 - INFO - Source DB: oracle , Destination DB: mysql, Operation: create
+2025-05-13 15:37:53,061 - INFO - Connections closed.
+2025-05-13 15:38:04,004 - INFO - Source DB: oracle, Destination DB: mysql, Operation: create
+2025-05-13 15:38:04,233 - INFO - Connected to source and destination databases
+2025-05-13 15:42:42,767 - INFO - Source DB: oracle, Destination DB: mysql, Operation: create
+2025-05-13 15:42:42,921 - INFO - Connected to source and destination databases
+2025-05-13 15:42:42,931 - INFO - Available tables in oracle: ['EMPLOYEE', 'STUDENT_COPY', 'STU_COPY', 'DEPT', 'EMP_COPY', 'EMP', 'STU']
+2025-05-13 15:42:58,489 - INFO - Selected table: employee
+2025-05-13 15:42:58,490 - INFO - Destination table name: emp
+2025-05-13 15:42:58,496 - ERROR - Error in submit1()
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\oracle_conn.py", line 85, in submit1
+    tk.messagebox.showinfo("Info", f"Table {destination_table} already exists in {dst_type}.")
+    ^^^^^^^^^^^^^
+AttributeError: module 'tkinter' has no attribute 'messagebox'
+2025-05-13 15:42:58,498 - INFO - Database connections closed.
+2025-05-13 15:51:09,373 - INFO - Source DB: oracle, Destination DB: mysql, Operation: create
+2025-05-13 15:51:09,480 - INFO - Connected to source and destination databases
+2025-05-13 15:51:09,490 - INFO - Available tables in oracle: ['EMPLOYEE', 'STUDENT_COPY', 'STU_COPY', 'DEPT', 'EMP_COPY', 'EMP', 'STU']
+2025-05-13 15:51:18,965 - INFO - Selected table: employee
+2025-05-13 15:51:18,965 - INFO - Destination table name: emp
+2025-05-13 15:51:22,102 - WARNING - Table emp already exists in mysql.
+2025-05-13 15:51:22,103 - INFO - Database connections closed.
+2025-05-13 15:51:25,917 - INFO - Selected table: employee
+2025-05-13 15:51:25,918 - INFO - Destination table name: emp2
+2025-05-13 15:51:26,426 - INFO - Table emp2 created successfully.
+2025-05-13 15:51:29,801 - INFO - Database connections closed.
+2025-05-13 16:07:09,220 - INFO - Source DB: mysql, Destination DB: postgresql, Operation: insert
+2025-05-13 16:07:09,282 - INFO - Connected to source and destination databases
+2025-05-13 16:07:09,284 - INFO - Available tables in mysql: ['dept2', 'dept_copy', 'emp', 'emp2', 'student']
+2025-05-13 16:07:23,281 - INFO - Selected table: dept2
+2025-05-13 16:07:23,282 - INFO - Destination table name: department1
+2025-05-13 16:07:24,273 - ERROR - Error in submit1()
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\oracle_conn.py", line 96, in submit1
+    if show_tables.table_exists(dst_cursor, dst_type, destination_table):
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\show_tables.py", line 68, in table_exists
+    return cursor.fetchone()[0]
+           ~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-05-13 16:07:29,809 - INFO - Database connections closed.
+2025-05-13 16:07:43,857 - INFO - Selected table: dept2
+2025-05-13 16:07:43,857 - INFO - Destination table name: department1
+2025-05-13 16:07:43,863 - ERROR - Error in submit1()
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\oracle_conn.py", line 96, in submit1
+    if show_tables.table_exists(dst_cursor, dst_type, destination_table):
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\show_tables.py", line 68, in table_exists
+    return cursor.fetchone()[0]
+           ~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-05-13 16:07:45,696 - INFO - Database connections closed.
+2025-05-13 16:08:01,275 - INFO - Selected table: emp
+2025-05-13 16:08:01,275 - INFO - Destination table name: emp1
+2025-05-13 16:08:01,280 - ERROR - Error in submit1()
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\oracle_conn.py", line 96, in submit1
+    if show_tables.table_exists(dst_cursor, dst_type, destination_table):
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\show_tables.py", line 68, in table_exists
+    return cursor.fetchone()[0]
+           ~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-05-13 16:08:02,865 - INFO - Database connections closed.
+2025-05-13 16:08:49,746 - INFO - Selected table: emp
+2025-05-13 16:08:49,746 - INFO - Destination table name: emp1
+2025-05-13 16:08:49,751 - ERROR - Error in submit1()
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\oracle_conn.py", line 96, in submit1
+    if show_tables.table_exists(dst_cursor, dst_type, destination_table):
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\show_tables.py", line 68, in table_exists
+    return cursor.fetchone()[0]
+           ~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-05-13 16:08:51,652 - INFO - Database connections closed.
+2025-05-13 16:08:57,407 - INFO - Source DB: mysql, Destination DB: postgresql, Operation: create
+2025-05-13 16:08:57,457 - INFO - Connected to source and destination databases
+2025-05-13 16:08:57,459 - INFO - Available tables in mysql: ['dept2', 'dept_copy', 'emp', 'emp2', 'student']
+2025-05-13 16:08:59,401 - INFO - Selected table: emp
+2025-05-13 16:08:59,402 - INFO - Destination table name: emp1
+2025-05-13 16:08:59,418 - ERROR - Error in submit1()
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\oracle_conn.py", line 85, in submit1
+    if show_tables.table_exists(dst_cursor, dst_type, destination_table):
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\show_tables.py", line 68, in table_exists
+    return cursor.fetchone()[0]
+           ~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-05-13 16:09:06,546 - INFO - Database connections closed.
+2025-05-13 16:09:18,845 - INFO - Selected table: student
+2025-05-13 16:09:18,845 - INFO - Destination table name: stud1
+2025-05-13 16:09:18,850 - ERROR - Error in submit1()
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\oracle_conn.py", line 85, in submit1
+    if show_tables.table_exists(dst_cursor, dst_type, destination_table):
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\show_tables.py", line 68, in table_exists
+    return cursor.fetchone()[0]
+           ~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-05-13 16:09:20,437 - INFO - Database connections closed.
+2025-05-13 16:10:09,235 - INFO - Source DB: mysql, Destination DB: postgresql, Operation: create
+2025-05-13 16:10:09,340 - INFO - Connected to source and destination databases
+2025-05-13 16:10:09,342 - INFO - Available tables in mysql: ['dept2', 'dept_copy', 'emp', 'emp2', 'student']
+2025-05-13 16:11:05,853 - INFO - Selected table: student
+2025-05-13 16:11:05,853 - INFO - Destination table name: stud
+2025-05-13 16:11:05,874 - ERROR - Error in submit1()
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 76, in submit1
+    if show_tables.table_exists(dst_cursor, dst_type, destination_table):
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\show_tables.py", line 68, in table_exists
+    return cursor.fetchone()[0]
+           ~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-05-13 16:11:08,021 - INFO - Database connections closed.
+2025-05-13 16:11:30,609 - INFO - Selected table: student
+2025-05-13 16:11:30,609 - INFO - Destination table name: stud
+2025-05-13 16:11:30,614 - ERROR - Error in submit1()
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 76, in submit1
+    if show_tables.table_exists(dst_cursor, dst_type, destination_table):
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\show_tables.py", line 68, in table_exists
+    return cursor.fetchone()[0]
+           ~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-05-13 16:11:43,079 - INFO - Database connections closed.
+2025-05-13 16:13:44,226 - INFO - Selected table: student
+2025-05-13 16:13:44,226 - INFO - Destination table name: stud
+2025-05-13 16:13:44,232 - ERROR - Error in submit1()
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 76, in submit1
+    if show_tables.table_exists(dst_cursor, dst_type, destination_table):
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\show_tables.py", line 68, in table_exists
+    return cursor.fetchone()[0]
+           ~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-05-13 16:13:50,107 - INFO - Database connections closed.
+2025-05-13 16:14:08,246 - INFO - Selected table: student
+2025-05-13 16:14:08,247 - INFO - Destination table name: stud
+2025-05-13 16:14:08,252 - ERROR - Error in submit1()
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 76, in submit1
+    if show_tables.table_exists(dst_cursor, dst_type, destination_table):
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\show_tables.py", line 68, in table_exists
+    return cursor.fetchone()[0]
+           ~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-05-13 16:14:51,909 - INFO - Database connections closed.
+2025-05-13 16:19:39,970 - INFO - Source DB: oracle, Destination DB: mysql, Operation: create
+2025-05-13 16:19:40,096 - INFO - Connected to source and destination databases
+2025-05-13 16:19:40,108 - INFO - Available tables in oracle: ['EMPLOYEE', 'STUDENT_COPY', 'STU_COPY', 'DEPT', 'EMP_COPY', 'EMP', 'STU']
+2025-05-13 16:19:51,123 - INFO - Selected table: employee
+2025-05-13 16:19:51,123 - INFO - Destination table name: emp3
+2025-05-13 16:19:51,793 - INFO - Table emp3 created successfully.
+2025-05-13 16:19:53,840 - INFO - Database connections closed.
+2025-05-13 16:20:06,613 - INFO - Source DB: oracle, Destination DB: postgresql, Operation: create
+2025-05-13 16:20:06,682 - INFO - Connected to source and destination databases
+2025-05-13 16:20:06,691 - INFO - Available tables in oracle: ['EMPLOYEE', 'STUDENT_COPY', 'STU_COPY', 'DEPT', 'EMP_COPY', 'EMP', 'STU']
+2025-05-13 16:20:11,854 - INFO - Selected table: employee
+2025-05-13 16:20:11,854 - INFO - Destination table name: emp3
+2025-05-13 16:20:11,872 - ERROR - Error in submit1()
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 76, in submit1
+    if show_tables.table_exists(dst_cursor, dst_type, destination_table):
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\show_tables.py", line 68, in table_exists
+    return cursor.fetchone()[0]
+           ~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-05-13 16:20:13,537 - INFO - Database connections closed.
+2025-05-13 16:25:08,936 - INFO - Selected table: employee
+2025-05-13 16:25:08,936 - INFO - Destination table name: emp3
+2025-05-13 16:25:08,942 - ERROR - Error in submit1()
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 76, in submit1
+    if show_tables.table_exists(dst_cursor, dst_type, destination_table):
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\show_tables.py", line 68, in table_exists
+    return cursor.fetchone()[0]
+           ~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-05-13 16:25:18,200 - INFO - Database connections closed.
+2025-05-13 16:25:37,369 - INFO - Source DB: postgresql, Destination DB: oracle, Operation: create
+2025-05-13 16:25:37,442 - INFO - Connected to source and destination databases
+2025-05-13 16:25:37,600 - INFO - Available tables in postgresql: ['student_copy', 'emp', 'student', 'employee', 'department']
+2025-05-13 16:25:52,354 - INFO - Selected table: student
+2025-05-13 16:25:52,354 - INFO - Destination table name: stu3
+2025-05-13 16:25:52,865 - INFO - Table stu3 created successfully.
+2025-05-13 16:25:54,749 - INFO - Database connections closed.
+2025-05-13 16:26:12,046 - INFO - Source DB: oracle, Destination DB: postgresql, Operation: insert
+2025-05-13 16:26:12,228 - INFO - Connected to source and destination databases
+2025-05-13 16:26:12,237 - INFO - Available tables in oracle: ['EMPLOYEE', 'STUDENT_COPY', 'STU_COPY', 'DEPT', 'EMP_COPY', 'EMP', 'STU', 'STU3']
+2025-05-13 16:26:26,265 - INFO - Selected table: student_copy
+2025-05-13 16:26:26,265 - INFO - Destination table name: stu3
+2025-05-13 16:26:26,289 - ERROR - Error in submit1()
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 87, in submit1
+    if show_tables.table_exists(dst_cursor, dst_type, destination_table):
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\show_tables.py", line 68, in table_exists
+    return cursor.fetchone()[0]
+           ~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-05-13 16:26:29,391 - INFO - Database connections closed.
+2025-05-13 16:28:35,620 - INFO - Source DB: mysql, Destination DB: postgresql, Operation: create
+2025-05-13 16:28:35,713 - INFO - Connected to source and destination databases
+2025-05-13 16:28:35,716 - INFO - Available tables in mysql: ['dept2', 'dept_copy', 'emp', 'emp2', 'emp3', 'student']
+2025-05-13 16:28:48,231 - INFO - Selected table: dept2
+2025-05-13 16:28:48,231 - INFO - Destination table name: dept1
+2025-05-13 16:28:48,257 - ERROR - Error in submit1()
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 76, in submit1
+    if show_tables.table_exists(dst_cursor, dst_type, destination_table):
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\show_tables.py", line 68, in table_exists
+    return cursor.fetchone()[0]
+           ~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-05-13 16:28:50,787 - INFO - Database connections closed.
+2025-05-13 16:31:46,736 - INFO - Selected table: dept2
+2025-05-13 16:31:46,736 - INFO - Destination table name: dept1
+2025-05-13 16:31:46,742 - ERROR - Error in submit1()
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 76, in submit1
+    if show_tables.table_exists(dst_cursor, dst_type, destination_table):
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\show_tables.py", line 68, in table_exists
+    return cursor.fetchone()[0]
+           ~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-05-13 16:31:48,284 - INFO - Database connections closed.
+2025-05-13 16:37:28,925 - INFO - Source DB: mysql, Destination DB: postgresql, Operation: create
+2025-05-13 16:37:29,131 - INFO - Connected to source and destination databases
+2025-05-13 16:37:29,133 - INFO - Available tables in mysql: ['dept2', 'dept_copy', 'emp', 'emp2', 'emp3', 'student']
+2025-05-13 16:37:45,072 - INFO - Selected table: dept_copy
+2025-05-13 16:37:45,072 - INFO - Destination table name: dept_copy2
+2025-05-13 16:37:45,086 - ERROR - Error in submit1()
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 76, in submit1
+    if show_tables.table_exists(dst_cursor, dst_type, destination_table):
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\show_tables.py", line 68, in table_exists
+    return cursor.fetchone()[0]
+           ~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-05-13 16:37:57,694 - INFO - Database connections closed.
+2025-05-13 16:38:46,663 - INFO - Selected table: dept_copy
+2025-05-13 16:38:46,663 - INFO - Destination table name: dept_copy2
+2025-05-13 16:38:46,669 - ERROR - Error in submit1()
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 76, in submit1
+    if show_tables.table_exists(dst_cursor, dst_type, destination_table):
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\show_tables.py", line 68, in table_exists
+    return cursor.fetchone()[0]
+           ~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-05-13 16:39:07,569 - INFO - Database connections closed.
+2025-05-13 16:39:55,187 - INFO - Source DB: mysql, Destination DB: postgresql, Operation: create
+2025-05-13 16:39:55,407 - INFO - Connected to source and destination databases
+2025-05-13 16:39:55,409 - INFO - Available tables in mysql: ['dept2', 'dept_copy', 'emp', 'emp2', 'emp3', 'student']
+2025-05-13 16:40:19,733 - INFO - Selected table: emp2
+2025-05-13 16:40:19,733 - INFO - Destination table name: employee1
+2025-05-13 16:40:19,753 - ERROR - Error in submit1()
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 76, in submit1
+    if show_tables.table_exists(dst_cursor, dst_type, destination_table):
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\show_tables.py", line 68, in table_exists
+    return cursor.fetchone()[0]
+           ~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-05-13 16:40:21,857 - INFO - Database connections closed.
+2025-05-13 16:41:29,101 - INFO - Source DB: mysql, Destination DB: postgresql, Operation: create
+2025-05-13 16:41:29,225 - INFO - Connected to source and destination databases
+2025-05-13 16:41:29,227 - INFO - Available tables in mysql: ['dept2', 'dept_copy', 'emp', 'emp2', 'emp3', 'student']
+2025-05-13 16:41:40,443 - INFO - Selected table: emp2
+2025-05-13 16:41:40,443 - INFO - Destination table name: employee1
+2025-05-13 16:41:40,470 - ERROR - Error in submit1()
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 76, in submit1
+    if show_tables.table_exists(dst_cursor, dst_type, destination_table):
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\show_tables.py", line 68, in table_exists
+    return cursor.fetchone()[0]
+           ~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-05-13 16:41:51,780 - INFO - Database connections closed.
+2025-05-13 16:49:01,399 - INFO - Source DB: mysql, Destination DB: postgresql, Operation: create
+2025-05-13 16:49:01,501 - INFO - Connected to source and destination databases
+2025-05-13 16:49:01,504 - INFO - Available tables in mysql: ['dept2', 'dept_copy', 'emp', 'emp2', 'emp3', 'student']
+2025-05-13 16:49:11,374 - INFO - Selected table: emp2
+2025-05-13 16:49:11,374 - INFO - Destination table name: employee1
+2025-05-13 16:49:11,395 - ERROR - Error in submit1()
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 76, in submit1
+    if show_tables.table_exists(dst_cursor, dst_type, destination_table):
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\show_tables.py", line 68, in table_exists
+    return cursor.fetchone()[0]
+           ~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-05-13 16:53:12,171 - INFO - Database connections closed.
+2025-05-13 16:53:13,449 - INFO - Selected table: emp2
+2025-05-13 16:53:13,449 - INFO - Destination table name: employee1
+2025-05-13 16:53:13,455 - ERROR - Error in submit1()
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 76, in submit1
+    if show_tables.table_exists(dst_cursor, dst_type, destination_table):
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\show_tables.py", line 68, in table_exists
+    return cursor.fetchone()[0]
+           ~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-05-13 16:53:15,028 - INFO - Database connections closed.
+2025-05-13 16:53:26,071 - INFO - Selected table: student
+2025-05-13 16:53:26,071 - INFO - Destination table name: stu
+2025-05-13 16:53:26,077 - ERROR - Error in submit1()
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 76, in submit1
+    if show_tables.table_exists(dst_cursor, dst_type, destination_table):
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\show_tables.py", line 68, in table_exists
+    return cursor.fetchone()[0]
+           ~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-05-13 16:53:27,405 - INFO - Database connections closed.
+2025-05-13 16:55:15,865 - INFO - Selected table: student
+2025-05-13 16:55:15,865 - INFO - Destination table name: stu
+2025-05-13 16:55:15,871 - ERROR - Error in submit1()
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 76, in submit1
+    if show_tables.table_exists(dst_cursor, dst_type, destination_table):
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\show_tables.py", line 68, in table_exists
+    return cursor.fetchone()[0]
+           ~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-05-13 16:55:17,501 - INFO - Database connections closed.
+2025-05-13 16:55:35,295 - INFO - Selected table: student
+2025-05-13 16:55:35,295 - INFO - Destination table name: stu
+2025-05-13 16:55:35,300 - ERROR - Error in submit1()
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 76, in submit1
+    if show_tables.table_exists(dst_cursor, dst_type, destination_table):
+       ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\show_tables.py", line 68, in table_exists
+    return cursor.fetchone()[0]
+           ~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-05-13 17:02:17,292 - INFO - Database connections closed.
+2025-05-13 17:02:36,664 - INFO - Source DB: mysql, Destination DB: postgresql, Operation: create
+2025-05-13 17:02:36,868 - INFO - Connected to source and destination databases
+2025-05-13 17:02:36,870 - INFO - Available tables in mysql: ['dept2', 'dept_copy', 'emp', 'emp2', 'emp3', 'student']
+2025-05-13 17:02:45,612 - INFO - Selected table: emp2
+2025-05-13 17:02:45,612 - INFO - Destination table name: employee1
+2025-05-13 17:02:45,894 - INFO - Table employee1 created successfully.
+2025-05-13 17:02:50,026 - INFO - Database connections closed.
+2025-05-13 17:10:18,448 - INFO - Source DB: mysql, Destination DB: postgresql, Operation: create
+2025-05-13 17:10:18,606 - INFO - Connected to source and destination databases
+2025-05-13 17:10:18,608 - INFO - Available tables in mysql: ['dept2', 'dept_copy', 'emp', 'emp2', 'emp3', 'student']
+2025-05-14 11:10:23,824 - INFO - Source DB: , Destination DB: , Operation: 
+2025-05-14 11:10:23,825 - ERROR - An unexpected error occurred in submit().
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 53, in submit
+    src_conn, src_cursor = connection.connect_database(src_type)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\connection.py", line 34, in connect_database
+    return conn, conn.cursor()
+           ^^^^
+UnboundLocalError: cannot access local variable 'conn' where it is not associated with a value
+2025-05-14 11:29:07,359 - INFO - Source DB: oracle, Destination DB: mysql, Operation: create
+2025-05-14 11:29:09,002 - INFO - Connected to source and destination databases
+2025-05-14 11:29:09,331 - INFO - Available tables in oracle: ['EMPLOYEE', 'STUDENT_COPY', 'STU_COPY', 'DEPT', 'EMP_COPY', 'EMP', 'STU', 'STU3']
+2025-05-14 12:49:25,343 - INFO - Source DB: oracle, Destination DB: mysql, Operation: create
+2025-05-14 12:49:27,185 - INFO - Connected to source and destination databases
+2025-05-14 12:49:27,195 - INFO - Available tables in oracle: ['EMPLOYEE', 'STUDENT_COPY', 'STU_COPY', 'DEPT', 'EMP_COPY', 'EMP', 'STU', 'STU3']
+2025-05-14 12:55:06,091 - INFO - Source DB: oracle, Destination DB: mysql, Operation: create
+2025-05-14 12:55:06,270 - INFO - Connected to source and destination databases
+2025-05-14 12:55:06,280 - INFO - Available tables in oracle: ['EMPLOYEE', 'STUDENT_COPY', 'STU_COPY', 'DEPT', 'EMP_COPY', 'EMP', 'STU', 'STU3']
+2025-05-14 12:58:47,949 - INFO - Selected table: emp
+2025-05-14 12:58:47,949 - INFO - Destination table name: employee2
+2025-05-14 12:58:49,021 - INFO - Table employee2 created successfully.
+2025-05-14 13:05:52,807 - INFO - Database connections closed.
+2025-05-14 14:21:54,931 - INFO - Source DB: oracle, Destination DB: mysql, Operation: create
+2025-05-14 14:21:55,127 - INFO - Connected to source and destination databases
+2025-05-14 14:21:55,137 - INFO - Available tables in oracle: ['EMPLOYEE', 'STUDENT_COPY', 'STU_COPY', 'DEPT', 'EMP_COPY', 'EMP', 'STU', 'STU3']
+2025-05-14 14:23:13,305 - INFO - Source DB: oracle, Destination DB: mysql, Operation: create
+2025-05-14 14:23:13,406 - INFO - Connected to source and destination databases
+2025-05-14 14:23:13,415 - INFO - Available tables in oracle: ['EMPLOYEE', 'STUDENT_COPY', 'STU_COPY', 'DEPT', 'EMP_COPY', 'EMP', 'STU', 'STU3']
+2025-05-14 14:27:44,896 - INFO - Source DB: , Destination DB: , Operation: 
+2025-05-14 14:27:44,897 - ERROR - An unexpected error occurred in submit().
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 56, in submit
+    src_conn, src_cursor = connection.connect_database(src_type)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\connection.py", line 34, in connect_database
+    return conn, conn.cursor()
+           ^^^^
+UnboundLocalError: cannot access local variable 'conn' where it is not associated with a value
+2025-05-14 14:28:00,771 - INFO - Source DB: oracle, Destination DB: mysql, Operation: create
+2025-05-14 14:28:00,876 - INFO - Connected to source and destination databases
+2025-05-14 14:28:00,885 - INFO - Available tables in oracle: ['EMPLOYEE', 'STUDENT_COPY', 'STU_COPY', 'DEPT', 'EMP_COPY', 'EMP', 'STU', 'STU3']
+2025-05-15 10:14:33,397 - INFO - Source DB: , Destination DB: , Operation: 
+2025-05-15 10:14:33,436 - ERROR - An unexpected error occurred in submit().
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 59, in submit
+    src_conn, src_cursor = connection.connect_database(src_type)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\connection.py", line 34, in connect_database
+    return conn, conn.cursor()
+           ^^^^
+UnboundLocalError: cannot access local variable 'conn' where it is not associated with a value
+2025-05-15 10:45:24,672 - INFO - Source DB: , Destination DB: , Operation: 
+2025-05-15 10:45:24,672 - ERROR - An unexpected error occurred in submit().
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 107, in submit
+    src_conn, src_cursor = connection.connect_database(src_type)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\connection.py", line 34, in connect_database
+    return conn, conn.cursor()
+           ^^^^
+UnboundLocalError: cannot access local variable 'conn' where it is not associated with a value
+2025-05-15 10:56:49,778 - INFO - Source DB: , Destination DB: , Operation: 
+2025-05-15 10:56:49,778 - ERROR - An unexpected error occurred in submit().
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 68, in submit
+    src_conn, src_cursor = connection.connect_database(src_type)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\connection.py", line 34, in connect_database
+    return conn, conn.cursor()
+           ^^^^
+UnboundLocalError: cannot access local variable 'conn' where it is not associated with a value
+2025-05-15 11:07:08,273 - INFO - Source DB: , Destination DB: , Operation: 
+2025-05-15 11:07:08,273 - ERROR - An unexpected error occurred in submit().
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 80, in submit
+    src_conn, src_cursor = connection.connect_database(src_type)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\connection.py", line 34, in connect_database
+    return conn, conn.cursor()
+           ^^^^
+UnboundLocalError: cannot access local variable 'conn' where it is not associated with a value
+2025-05-15 11:07:47,136 - INFO - Source DB: oracle, Destination DB: mysql, Operation: create
+2025-05-15 11:07:49,236 - INFO - Connected to source and destination databases
+2025-05-15 11:07:49,542 - INFO - Available tables in oracle: ['EMPLOYEE', 'STUDENT_COPY', 'STU_COPY', 'DEPT', 'EMP_COPY', 'EMP', 'STU', 'STU3']
+2025-05-15 11:13:45,284 - INFO - Source DB: oracle, Destination DB: mysql, Operation: create
+2025-05-15 11:13:45,460 - INFO - Connected to source and destination databases
+2025-05-15 11:13:45,471 - INFO - Available tables in oracle: ['EMPLOYEE', 'STUDENT_COPY', 'STU_COPY', 'DEPT', 'EMP_COPY', 'EMP', 'STU', 'STU3']
+2025-05-15 11:13:59,906 - INFO - Selected table: employee
+2025-05-15 11:13:59,907 - INFO - Destination table name: empoo
+2025-05-15 11:14:03,158 - INFO - Table empoo created successfully.
+2025-05-15 11:14:03,159 - INFO - Database connections closed.
+2025-05-15 11:29:55,075 - INFO - Source DB: oracel , Destination DB: mysql, Operation: 
+2025-05-15 11:29:55,076 - ERROR - An unexpected error occurred in submit().
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 98, in submit
+    src_conn, src_cursor = connection.connect_database(src_type)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\connection.py", line 34, in connect_database
+    return conn, conn.cursor()
+           ^^^^
+UnboundLocalError: cannot access local variable 'conn' where it is not associated with a value
+2025-05-15 11:30:02,887 - INFO - Source DB: oracel , Destination DB: mysql, Operation: create
+2025-05-15 11:30:02,887 - ERROR - An unexpected error occurred in submit().
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 98, in submit
+    src_conn, src_cursor = connection.connect_database(src_type)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\connection.py", line 34, in connect_database
+    return conn, conn.cursor()
+           ^^^^
+UnboundLocalError: cannot access local variable 'conn' where it is not associated with a value
+2025-05-15 11:30:14,300 - INFO - Source DB: oracle, Destination DB: mysql, Operation: 
+2025-05-15 11:30:14,539 - INFO - Connected to source and destination databases
+2025-05-15 11:30:14,551 - INFO - Available tables in oracle: ['EMPLOYEE', 'STUDENT_COPY', 'STU_COPY', 'DEPT', 'EMP_COPY', 'EMP', 'STU', 'STU3']
+2025-05-29 10:38:34,088 - INFO - Selected table: 
+2025-05-29 10:38:34,114 - INFO - Destination table name: 
+2025-05-29 10:38:34,114 - ERROR - Error in submit1()
+Traceback (most recent call last):
+  File "C:\Users\Devesh Rayadu\.vscode\data_transfer\test.py", line 98, in submit1
+    if oper == 'create':
+       ^^^^
+NameError: name 'oper' is not defined. Did you mean: 'oper1'?
+2025-05-29 10:38:39,476 - INFO - Database connections closed.
+2025-05-29 10:39:02,105 - INFO - Source DB: oracle, Destination DB: mysql, Operation: create
+2025-05-29 10:39:04,432 - INFO - Connected to source and destination databases
+2025-05-29 10:39:04,681 - INFO - Available tables in oracle: ['EMPLOYEE', 'STUDENT_COPY', 'STU_COPY', 'DEPT', 'EMP_COPY', 'EMP', 'STU', 'STU3']
+2025-05-29 10:39:04,682 - INFO - Source DB: oracle, Destination DB: mysql, Operation: create
+2025-05-29 10:39:04,744 - INFO - Connected to source and destination databases
+2025-05-29 10:39:04,762 - INFO - Available tables in oracle: ['EMPLOYEE', 'STUDENT_COPY', 'STU_COPY', 'DEPT', 'EMP_COPY', 'EMP', 'STU', 'STU3']
+2025-05-29 10:39:51,486 - INFO - Selected table: employee
+2025-05-29 10:39:51,487 - INFO - Destination table name: emp2
+2025-05-29 10:39:53,904 - WARNING - Table emp2 already exists in mysql.
+2025-05-29 10:39:53,904 - INFO - Database connections closed.
+2025-05-29 10:40:08,897 - INFO - Selected table: employee
+2025-05-29 10:40:08,897 - INFO - Destination table name: employee1
+2025-05-29 10:42:19,332 - INFO - Table employee1 created successfully.
+2025-05-29 10:42:19,332 - INFO - Database connections closed.
+2025-05-29 10:42:57,759 - INFO - Source DB: oracle, Destination DB: postgresql, Operation: insert
+2025-05-29 10:42:58,083 - INFO - Connected to source and destination databases
+2025-05-29 10:42:58,094 - INFO - Available tables in oracle: ['EMPLOYEE', 'STUDENT_COPY', 'STU_COPY', 'DEPT', 'EMP_COPY', 'EMP', 'STU', 'STU3']
+2025-05-29 10:44:20,475 - INFO - Source DB: oracle, Destination DB: postgresql, Operation: insert
+2025-05-29 10:44:20,569 - INFO - Connected to source and destination databases
+2025-05-29 10:44:20,581 - INFO - Available tables in oracle: ['EMPLOYEE', 'STUDENT_COPY', 'STU_COPY', 'DEPT', 'EMP_COPY', 'EMP', 'STU', 'STU3']
+2025-05-29 10:44:47,286 - INFO - Selected table: employee
+2025-05-29 10:44:47,286 - INFO - Destination table name: employee1
+2025-05-29 10:44:48,219 - WARNING - Table employee1 exists. Dropping and recreating.
+2025-05-29 10:44:48,544 - INFO - Data transferred from employee to employee1
